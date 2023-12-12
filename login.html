@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #282828;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url(login_bg.jpg);
+        background-position: center;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-size: 1.2em;
+      }
+
+      input {
+        padding: 5px;
+        font-size: 1em;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #1db954;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #1ed760;
+      }
+    </style>
+    <title>Login | Music Clone</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login to MyMusic</h1>
+      <form id="loginForm" >
+        <label for="username">Username:</label>
+        <input type="text" id="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <!-- <a href="index.html" -->
+          <!-- > -->
+          
+          <a href="index.html"><button type="button" onclick="login()">Login</button></a>
+          <!-- </a> -->
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
